@@ -1,30 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/gallery.css">
-    <title>Document</title>
-  </head>
-  <body>
-  <header>
-                <nav id="desk-nav">
-                    <div class="logo">
-                        <img src="/img/Logo wine restaurant.svg" width="1103" height="266" alt="logo">
-                    </div>
-                    <div>
-                        <div class="nav-links">
-                            <a href="#Home">Home</a>
-                            <a href="#Menu">Menu</a>
-                            <a href="#Services">Services</a>
-                            <a href="#Contact">Contact</a>
-                        </div>
-                    </div>
-                </nav>
-            </header>
-    <main>
-      <div class="content-cards">
-        <div class="card">
+const contCards = document.querySelector(".content-cards")
+
+const data = [
+  {
+    urlImg:
+      "https://imgs.search.brave.com/8BNlOgXIz1PTPwAaNAxfRMfswk9sTTZtfkyn2TJ7VUQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZGVsYXNh/YmFuYS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDkv/UHVudGEtZGUtQW5j/YS0yLnBuZz9maXQ9/MTA4MCwxMDgwJnNz/bD0x",
+    name: "Punta de Anca",
+    price: "28.000",
+  },
+  {
+    urlImg:
+      "https://imgs.search.brave.com/qca0HsVbRhpTQzZ17qmtzsgtGynCriG5EFZTBY2I6D0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wcm92/ZWVkb3JkZXJlc3Rh/dXJhbnRlc2Vsc2Fs/dmFkb3IuZmlsZXMu/d29yZHByZXNzLmNv/bS8yMDIwLzA5L2Nv/cnRlcy1kZS1jYXJu/ZS5qcGc_dz02ODg",
+    name: "Costillas BBQ",
+    price: "25.000",
+  },
+  {
+    urlImg:
+      "https://imgs.search.brave.com/TDndpNW7afuel7kk-bsNPDVzq8YD9YJqc-WEDAMxCNY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9oaXBz/LmhlYXJzdGFwcHMu/Y29tL2htZy1wcm9k/L2ltYWdlcy9zYWxt/b24tdmVyZHVyYXMt/cGxhdG8tZWxsZS1n/b3VybWV0LTY1YzQ3/YTU1OGYyOTUuanBn/P2Nyb3A9MC43Mjd4/dzoxLjAweGg7MC4x/Nzh4dywwJnJlc2l6/ZT0zNjA6Kg",
+  name:"Salmon en finas hierbas",
+  price:"30.000"
+  
+    },
+];
+
+data.forEach((element)=>{
+contCards.innerHTML += `
+<div class="card">
           <div class="img">
             <div class="save">
               <svg
@@ -69,12 +69,12 @@
               </svg>
            
             </div>
-               <img src="https://imgs.search.brave.com/bRKDGdYiZAmnsef6Uvt5Z0eP1rJIROzg_ejK__ozRGs/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wYXJh/ZGUuY29tLy5pbWFn/ZS9jX2xpbWl0LGNz/X3NyZ2IsZmxfcHJv/Z3Jlc3NpdmUscV9h/dXRvOmdvb2Qsd183/MDAvTVRrd05UZ3dN/alkwT1RJNU9EWXpO/VFE0L2NoZWVzeS1w/YXNhdC1zYXVzYWdl/LXNwaW5hY2gtZnRy/LmpwZw"/>
+               <img src="${element.urlImg}"/>
           </div>
 
           <div class="text">
-            <p class="h3">Pastas a la boloñesa</p>
-            <p class="p">$20.000</p>
+            <p class="h3">${element.name}</p>
+            <p class="p">$ ${element.price}</p>
 
             <div class="icon-box">
               
@@ -82,8 +82,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <script src="../js/gallery.js"></script>
-  </body>
-</html>
+`;
+})
+
