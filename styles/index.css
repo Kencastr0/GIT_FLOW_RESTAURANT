@@ -27,6 +27,10 @@ a,
 
 /* BACKGROUND IMG */
 
+.first_Sec{
+    height: 100vh;
+}
+
 .background-container {
     background-image: url('/img/pexels-valeria-boltneva-1484516.jpg');
     background-size: cover; 
@@ -77,7 +81,7 @@ a:hover {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 100px;
+    width: 220px;
     margin-bottom: -40px;
 }
 .logo:hover {
@@ -157,5 +161,26 @@ a:hover {
     top: -45%;
     background-color: var(--clay);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+
+  /* ESTILOS NUESTROS SERVICIOS*/
+  .services_section{
+    height: 100vh;
+  }
+
+  .p_container{
+    text-align: center;
+  }
+
+  .p_container .p_services{
+    font-size: 40px;
+    font-family:'face', sans-serif;
+  }
+
+  .services_container{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
