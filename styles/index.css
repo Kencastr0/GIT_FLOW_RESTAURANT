@@ -28,7 +28,7 @@ a,
 /* BACKGROUND IMG */
 
 .first_Sec{
-    height: 100vh;
+    height: 56vh;
 }
 
 .background-container {
@@ -165,7 +165,9 @@ a:hover {
 
   /* ESTILOS NUESTROS SERVICIOS*/
   .services_section{
-    height: 100vh;
+    height: 70vh;
+    background-image: url(/img/quindio-image.jpg);
+    background-size: cover;
   }
 
   .p_container{
@@ -175,6 +177,7 @@ a:hover {
   .p_container .p_services{
     font-size: 40px;
     font-family:'face', sans-serif;
+    color: var(--white);
   }
 
   .services_container{
