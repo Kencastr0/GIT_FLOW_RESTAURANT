@@ -165,16 +165,22 @@ a:hover {
 
   /* ESTILOS NUESTROS SERVICIOS*/
   .services_section{
-    height: 70vh;
+    padding: 100px;
+    height: 90vh;
     background-image: url(/img/quindio-image.jpg);
     background-size: cover;
   }
 
   .p_container{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .p_container .p_services{
+    text-align: center;
+    width: 20%;
+    background-color: var(--black);
     font-size: 40px;
     font-family:'face', sans-serif;
     color: var(--white);
