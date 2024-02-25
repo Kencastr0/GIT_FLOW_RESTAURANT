@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/index.css">
-    <title>Login</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/login.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <section>
+        <div class="form-box">
+            <div class="form-value">
+            <form id="form-login" action="./index.html">
+                <h2>Iniciar sesión</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input id="email" type="email" required />
+                    <label for="">Correo electronico celular</label>
+                </div>
+                    <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input id="password" type="password" required />
+                    <label for="">Contraseña</label>
+                </div>
+                <div class="forget">
+                    <label> <input type="checkbox" /> Recuerdame </label>
+                </div>
+                <input id="submit" type="submit" value="Iniciar sesion">
+                <div class="register">
+                    <p>No tienes una cuenta ? <a href="https://www.youtube.com/watch?v=BtLSaxRnIhc">Registrate</a></p>
+                </div>
+            </form>
+            </div>
+        </div>
+        </section>
+        <script src="../js/login.js"></script>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    </body>
 </html>
